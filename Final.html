@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>My Personal Website</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#infographic">Infographic</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#interests">Interests</a></li>
+                <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <div class="top-section">
+            <h2> About Me</h2>
+            
+            <figure class="image-with-caption">
+                <img src="your-image.jpg" alt="Sakshi Sakshi">
+                <h1>Web Developer :</h1>
+                <p>Aspiring to create amazing web experiences</p>
+            </figure>
+            
+            <h1>Sakshi Sakshi</h1>
+            <div class="links">
+                <a href="resume" download>Resume</a>
+                <a href="#contact">Contact Me</a>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="infographic">
+        <div class="infographic">
+            <h3>Honesty Statement</h3>
+            <br />
+            <quote>
+            I declare that my assignment is wholly my own work in accordance with Seneca Academic Policy.
+            No part of this assignment has been copied manually or electronically from any other source
+            (including web sites) except for the information supplied by the WEB222 instructors and / or
+            made available in this assignment for my use. I also declare that no part of this assignment
+            has been distributed to other students.           
+            </quote>
+            <h4> </h4>
+            <div class="info">
+                <div class="info-item">
+                    <span class="label">Name:</span>
+                    <span class="value">Sakshi Sakshi</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">Date:</span>
+                    <span class="value">August 17, 2023</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">Course:</span>
+                    <span class="value">WEB222 - Web Programming Principles</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">Section:</span>
+                    <span class="value">NAA</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">Professor:</span>
+                    <span class="value">Mark Merrit</span>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    
+    <section id="education">
+        <div class="education">
+            <h2>Education</h2>
+            <div class="education-cards">
+                <div class="education-card">
+                    <h3>Seneca College</h3>
+                    <p>Diploma: Computer Programming</p>
+                    <p>Graduation Year: 2024</p>
+                </div>
+                <div class="education-card">
+                    <h3>Online Course from Harvard University</h3>
+                    <p>Course: CS50x Introduction to Computer Science</p>
+                    <p>Completion Year: 2022</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="interests">
+        <div class="interests">
+            <h2>Interests</h2>
+            <p>I'm passionate about various subjects related to technology that keep me engaged and motivated. Here are a few of my interests:</p>
+            <ul>
+                <li>Front-end Web Development</li>
+                <li>User Experience Design</li>
+                <li>Graphic Design</li>
+                <li>Computer Programming</li>
+                <li>Game development</li>
+            </ul>
+        </div>
+    </section>
+    
+    <section id="expertise">
+        <div class="expertise">
+            <h2>Expertise</h2>
+            <p>With a solid foundation in web development and a passion for creating exceptional user experiences, I bring the following expertise to the table:</p>
+            <ul>
+                <li>Proficient in HTML, CSS, and JavaScript</li>
+                <li>Responsive and Mobile-First Design</li>
+                <li>UI/UX Design Principles</li>
+                <li>Front-end Frameworks (e.g., Bootstrap)</li>
+                <li>Version Control with Git</li>
+            </ul>
+        </div>
+    </section>
+    
+
+    <section id="contact">
+        <div class="contact">
+            <h2> Contact Me</h2>
+            <form id="contactForm" action="https://hCpbin.org/post" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+    
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" required>
+    
+                <label for="postalCode">Postal Code:</label>
+                <input type="text" id="postalCode" name="postalCode" pattern="[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d" required>
+                
+                <label>Reason:</label>
+                <label><input type="radio" name="reason" value="Question"> Question</label>
+                <label><input type="radio" name="reason" value="Comment"> Comment</label>
+                <label><input type="radio" name="reason" value="Hiring"> Hiring</label>
+                <div id="hourlyRateField" style="display: none;">
+                    <label for="hourlyRate">Hourly Rate:</label>
+                    <input type="text" id="hourlyRate" name="hourlyRate">
+                </div>
+    
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+    
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+    
+
+    <footer>
+        <p>&copy; 2023 Sakshi Sakshi. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
